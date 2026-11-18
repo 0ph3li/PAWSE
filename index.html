@@ -1,0 +1,203 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   PAWSE 暂停 — a bakery where the cats are up for adoption
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAWSE 暂停 — stay a little</title>
+  <meta name="description" content="PAWSE is a bakery in taipei where every cat is waiting for someone. come for a croissant. come back for them.">
+  <meta name="author" content="ghostly.grl">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,0..100&family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/home.css?v=9">
+</head>
+<body class="pg-home">
+
+  <!-- ═══ loader ═══ -->
+  <div class="ld" aria-hidden="true">
+    <div class="ld__in">
+      <b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b>
+      <p class="ld__t"><span>preheating the oven</span><b class="ld__n">0</b><span class="ld__u">°C</span></p>
+      <span class="ld__c">暂停 · bakery · taipei</span>
+    </div>
+  </div>
+
+  <!-- ═══ nav ═══ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="top">
+      <b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b>
+      <span class="nav__cn">暂停</span>
+    </a>
+    <nav class="nav__links">
+      <a href="cats.html">cats</a>
+      <a href="bakes.html">bakes</a>
+      <a href="stay.html">stay</a>
+      <a href="went-home.html">went home</a>
+      <a href="about.html">about</a>
+    </nav>
+    <button class="pbtn" data-pause data-magnetic=".3" aria-pressed="false" aria-label="pause the site"><span class="pbtn__ic"><i></i><i></i></span><span>pause</span></button>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ═══ 01 · hero — the apple card ═══ -->
+    <section class="hero" id="top">
+      <div class="hero__card">
+        <div class="hero__cat slot slot--cut" data-img="HOME/hero-cat.png" data-desc="a cat, cut out, glossy, close, leaning in from the top-left like the first apple" data-cursor="hi"></div>
+        <h1 class="hero__title wide"><span class="hero__l">Stay</span><span class="hero__l hero__l--2">with me</span><span class="sr"> — PAWSE 暂停, a bakery in taipei where the cats are up for adoption</span></h1>
+        <i class="hero__line" aria-hidden="true"></i>
+        <div class="hero__bread slot slot--cut" data-img="HOME/hero-croissant.png" data-desc="one croissant, cut out, huge and glossy, breaking out of the bottom-right corner" data-cursor="still warm"></div>
+        <div class="hero__info">
+          <b class="hero__script script">Pawse</b>
+          <span class="lbl">bakery · taipei</span>
+          <p class="tiny">a bakery in taipei where every cat is waiting for someone. come in for a croissant, sit down, don’t touch anyone. come back twice more. on the third visit, a cat may fall asleep on you. that’s the paperwork.</p>
+          <div class="hero__tags">
+            <span class="hero__paren cn">(<span>暂停<br>一下</span>)</span>
+            <span class="oval script">stay a little</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__under"><span>pawse.taipei</span><span><b data-waiting>6</b> cats waiting today</span><span>scroll ↓</span></div>
+    </section>
+
+    <!-- ═══ 02 · the menu — breakfast all day board ═══ -->
+    <section class="bb" id="bakes">
+      <article class="bb__panel bb__panel--a">
+        <h2 class="bb__h"><span class="cond">Baked Fresh</span><span class="bb__row"><span class="script">all day</span><span class="oval">7–19</span><span class="script">club</span></span></h2>
+        <div class="bb__item bb__item--1">
+          <span class="num">1</span>
+          <div class="slot slot--cut" data-img="HOME/bake-croissant.png" data-desc="butter croissant, cut out, glossy" data-cursor="miso’s pick"></div>
+          <p class="tiny">butter croissant<br>(miso’s pick)<br>45 nt</p>
+        </div>
+        <div class="bb__item bb__item--2">
+          <span class="num">2</span>
+          <div class="slot slot--cut" data-img="HOME/bake-eclair.png" data-desc="two chocolate éclairs, cut out" data-cursor="nori’s pick"></div>
+          <p class="tiny">nap nap éclair<br>(nori’s pick)<br>60 nt</p>
+        </div>
+        <div class="bb__item bb__item--3">
+          <span class="num">3</span>
+          <div class="slot slot--cut" data-img="HOME/bake-soda.png" data-desc="soda bread loaf, cut out, top crust" data-cursor="kumo’s pick"></div>
+          <p class="tiny">soda bread<br>(kumo’s pick)<br>80 nt</p>
+        </div>
+        <i class="bb__arc bb__arc--1" aria-hidden="true"></i><i class="bb__arc bb__arc--2" aria-hidden="true"></i>
+        <p class="bb__stack script" aria-label="we are serving croissants all day long"><span>we are</span><span>serving</span><span>crois-</span><span>sants</span><span>all day</span><span>long</span></p>
+        <p class="bb__foot tiny">yongkang st. // a bakery with six cats in it</p>
+      </article>
+
+      <article class="bb__panel bb__panel--b">
+        <h2 class="bb__h bb__h--b"><span class="script">a cat &amp; a croissant</span><span class="cond">Brunch</span></h2>
+        <p class="bb__note tiny">non-stop brunch<br>in a room full of cats</p>
+        <div class="bb__plate">
+          <span class="num">1</span>
+          <div class="slot slot--cut" data-img="HOME/bake-plate.png" data-desc="a croissant on a white plate, seen from above, cut out" data-cursor="sit down"></div>
+        </div>
+        <div class="bb__item bb__item--4">
+          <span class="num">3</span>
+          <div class="slot slot--cut" data-img="HOME/bake-cranberry.png" data-desc="cranberry swirl roll, cut out" data-cursor="panna’s pick"></div>
+        </div>
+        <div class="bb__item bb__item--5">
+          <span class="num">2</span>
+          <div class="slot slot--cut" data-img="HOME/bake-chocolate.png" data-desc="dark chocolate dome cake, cut out" data-cursor="biscotti’s pick"></div>
+        </div>
+        <i class="bb__arc bb__arc--3" aria-hidden="true"></i>
+        <p class="bb__caps script">such a soft and warm place where every morning feels like a cat on a lazy sunday</p>
+        <p class="bb__side tiny">every day from<br>7am to 7pm<br><br>whether you came for a croissant or for someone with whiskers, the coffee is hot and nobody is in a hurry.</p>
+      </article>
+    </section>
+
+    <!-- ═══ 03 · the cats — xiaoqi product cards ═══ -->
+    <section class="cats" id="cats">
+      <header class="cats__head">
+        <span class="lbl">waiting by the window · <b data-waiting>6</b> cats</span>
+        <i></i>
+      </header>
+      <div class="cats__grid">
+        <!-- cards are built in js/home.js from PW.CATS -->
+      </div>
+      <p class="cats__foot cn">*每一只猫都在等人。不用急，猫会选你。 <span>every cat is waiting for someone. no rush. the cat picks.</span> <a class="cats__more oval" href="cats.html">meet all six →</a></p>
+    </section>
+
+    <!-- ═══ 04 · the slow teas — mocktail series ═══ -->
+    <section class="mk" id="teas">
+      <div class="mk__head">
+        <h2 class="mk__h"><span>The Slow</span><span>Teas</span></h2>
+        <span class="mk__badge">‖<small>new</small></span>
+        <span class="mk__box lbl">new<br>menu<br><em class="script">for staying</em></span>
+        <b class="mk__script script">Series</b>
+      </div>
+      <div class="mk__stage">
+        <div class="mk__cup mk__cup--1 slot slot--cut" data-img="HOME/drink-miso.png" data-desc="miso latte in a ribbed glass, cinnamon stick, cut out" data-cursor="sip"></div>
+        <div class="mk__cup mk__cup--2 slot slot--cut" data-img="HOME/drink-kumo.png" data-desc="earl grey with oat foam cloud, ribbed glass, cut out" data-cursor="sip"></div>
+        <div class="mk__cup mk__cup--3 slot slot--cut" data-img="HOME/drink-nori.png" data-desc="iced matcha with black sesame, ribbed glass, cut out" data-cursor="sip"></div>
+        <p class="mk__lab mk__lab--1"><b>Miso Latte</b><span class="tiny">butter · cinnamon<br>espresso</span></p>
+        <p class="mk__lab mk__lab--2"><b>Kumo Fog</b><span class="tiny">earl grey · oat cloud<br>honey</span></p>
+        <p class="mk__lab mk__lab--3"><b>Nori Matcha</b><span class="tiny">matcha · black sesame<br>milk</span></p>
+      </div>
+      <div class="mk__foot"><b class="script">Brand New</b><span class="tiny">one refill per cat on your lap</span><b class="script">Sit as long as you like</b></div>
+    </section>
+
+    <!-- ═══ 05 · STAY — the sandwich poster ═══ -->
+    <section class="st" id="how">
+      <div class="st__top"><b class="lbl">the adoption</b><span class="cn">不急 ｜ 三次见面 ｜ 猫来决定</span></div>
+      <div class="st__stage">
+        <h2 class="st__word wide" aria-label="stay"><span class="st__a">ST</span><span class="st__b">AY</span></h2>
+        <div class="st__cat slot slot--cut" data-img="HOME/stay-cat.png" data-desc="a cat stretching long, cut out, glossy, in front of the word" data-cursor="stay"></div>
+      </div>
+      <div class="st__list">
+        <div class="st__it"><b>visit one</b><span class="cn">第一次，吃个可颂</span><p>buy a croissant. sit down. a cat pretends not to watch.</p><em class="script">1 croissant</em></div>
+        <div class="st__it"><b>visit two</b><span class="cn">第二次，坐下来</span><p>same chair if you can. the cat sits one chair closer.</p><em class="script">1 slow tea</em></div>
+        <div class="st__it"><b>visit three</b><span class="cn">第三次，猫选你</span><p>if a cat falls asleep on you, that’s the paperwork.</p><em class="script">1 cat (maybe)</em></div>
+      </div>
+      <div class="st__you">
+        <span class="lbl">your visits to this site</span>
+        <div class="st__dots"><i></i><i></i><i></i></div>
+        <p data-visit-say>first visit. a cat is pretending not to watch.</p>
+      </div>
+      <p class="st__bottom lbl">hello, cat. it’s you.</p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <p class="ft__call wide">come for a croissant.<span class="script">come back for them.</span></p>
+      <div><b>find us</b><span>lane 12, yongkang st.</span><span>da’an, taipei 106</span><span>open 7:00–19:00</span></div>
+      <div><b>the rules</b><span>no picking up cats.</span><span>no waking up cats.</span><span>the cat decides.</span></div>
+      <div><b>say hi</b><span>hello@pawse.tw</span><span>@pawse.taipei</span><span>press P to pause</span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b><span class="script">stay a little</span></div>
+    <div class="ft__bottom">
+      <span>© PAWSE 暂停 2026 · a concept bakery</span>
+      <span>no cats were woken up in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=9"></script>
+  <script src="js/home.js?v=9"></script>
+</body>
+</html>
+<!--
+      ‖ ‖        /\_/\
+      ‖ ‖       ( -.- )  zzz      <3
+      ‖ ‖        > ^ <
+               (")_(")
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   PAWSE 暂停 · stay a little. the cat decides.
+-->

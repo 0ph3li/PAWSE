@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   PAWSE 暂停 — stay with one (how adoption works)
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>stay with one — PAWSE 暂停</title>
+  <meta name="description" content="how adoption works at PAWSE, a bakery in taipei: no rush, three visits, and the cat decides.">
+  <meta name="author" content="ghostly.grl">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,0..100&family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Noto+Sans+SC:wght@400;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/stay.css?v=3">
+</head>
+<body class="pg-stay">
+
+  <!-- ═══ nav ═══ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b>
+      <span class="nav__cn">暂停</span>
+    </a>
+    <nav class="nav__links">
+      <a href="cats.html">cats</a>
+      <a href="bakes.html">bakes</a>
+      <a href="stay.html" aria-current="page">stay</a>
+      <a href="went-home.html">went home</a>
+      <a href="about.html">about</a>
+    </nav>
+    <button class="pbtn" data-pause data-magnetic=".3" aria-pressed="false" aria-label="pause the site"><span class="pbtn__ic"><i></i><i></i></span><span>pause</span></button>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ═══ 01 · head ═══ -->
+    <section class="sh" id="top">
+      <div class="sh__top">
+        <b class="lbl">stay · 领养</b>
+        <span class="cn">不急 ｜ 三次见面 ｜ 猫来决定</span>
+        <b class="lbl">how adoption works</b>
+      </div>
+      <h1 class="sh__title wide"><span class="sh__l">Stay</span><span class="sh__l sh__l--2"><span class="script">with</span> one</span></h1>
+      <div class="sh__rules">
+        <p><span class="num">1</span><b>no rush</b><span class="cn">不急</span></p>
+        <p><span class="num">2</span><b>three visits</b><span class="cn">三次见面</span></p>
+        <p><span class="num">3</span><b>the cat decides</b><span class="cn">猫来决定</span></p>
+      </div>
+      <div class="sh__cat slot slot--cut" data-img="HOME/stay-cat.png" data-desc="a cat stretching long" data-cursor="stay"></div>
+    </section>
+
+    <!-- ═══ 02 · the three visits — cards that stack as you scroll ═══ -->
+    <section class="vs" id="visits">
+      <article class="vc vc--1">
+        <div class="vc__txt">
+          <span class="vc__n">01</span>
+          <h2 class="vc__t wide">Visit one</h2>
+          <p class="vc__cn cn">第一次，吃个可颂。</p>
+          <p class="vc__p">buy a croissant. sit down. that’s the whole job. the cats will pretend you aren’t there; they are reading you anyway.</p>
+          <dl class="vc__dl"><div><dt>you</dt><dd>eat, read, stay off your phone a little</dd></div><div><dt>the cat</dt><dd>watches from the shelf</dd></div><div><dt>time</dt><dd>as long as a slow tea</dd></div></dl>
+          <span class="vc__s script">1 croissant</span>
+        </div>
+        <figure class="vc__pic"><div class="slot" data-img="VISIT/visit-1.jpg" data-desc="a real photo: someone alone at a table with a croissant, a cat on a shelf in the background pretending not to look" data-cursor="visit one"></div></figure>
+      </article>
+      <article class="vc vc--2">
+        <div class="vc__txt">
+          <span class="vc__n">02</span>
+          <h2 class="vc__t wide">Visit two</h2>
+          <p class="vc__cn cn">第二次，坐近一点。</p>
+          <p class="vc__p">same chair if you can. the cat you paused for gets told you’re coming. one of you will move a little closer. it doesn’t have to be you.</p>
+          <dl class="vc__dl"><div><dt>you</dt><dd>sit low, hand open, no grabbing</dd></div><div><dt>the cat</dt><dd>one chair closer, maybe two</dd></div><div><dt>time</dt><dd>a slow tea and a refill</dd></div></dl>
+          <span class="vc__s script">1 slow tea</span>
+        </div>
+        <figure class="vc__pic"><div class="slot" data-img="VISIT/visit-2.jpg" data-desc="a real photo: a cat sitting on the chair next to a person, close but not touching, warm light" data-cursor="visit two"></div></figure>
+      </article>
+      <article class="vc vc--3">
+        <div class="vc__txt">
+          <span class="vc__n">03</span>
+          <h2 class="vc__t wide">Visit three</h2>
+          <p class="vc__cn cn">第三次，猫来决定。</p>
+          <p class="vc__p">if a cat falls asleep on you, that’s the paperwork. if not, nothing is wrong with you. come back for a croissant anyway; someone else may be deciding.</p>
+          <dl class="vc__dl"><div><dt>you</dt><dd>stay very still</dd></div><div><dt>the cat</dt><dd>decides</dd></div><div><dt>time</dt><dd>until they wake up</dd></div></dl>
+          <span class="vc__s script">1 cat (maybe)</span>
+        </div>
+        <figure class="vc__pic"><div class="slot" data-img="VISIT/visit-3.jpg" data-desc="a real photo: a cat asleep on someone's lap, hands resting gently, soft afternoon light" data-cursor="visit three"></div></figure>
+      </article>
+    </section>
+
+    <!-- ═══ 03 · stay still — hold ‖ and the cat comes closer ═══ -->
+    <section class="sv" id="still">
+      <div class="sv__head">
+        <b class="lbl">practice · 练习</b>
+        <h2 class="sv__title wide">Stay still</h2>
+        <p class="sv__lead">cats come to people who don’t chase. hold the pause button and don’t let go. let go too early and they wander off.</p>
+      </div>
+      <div class="sv__room" data-room>
+        <div class="sv__cat slot slot--cut" data-img="HOME/hero-cat.png" data-desc="a cat, cut out, close" data-sv-cat></div>
+        <p class="sv__say script" data-sv-say>someone is on the far shelf.</p>
+      </div>
+      <button class="sv__hold" data-hold aria-label="hold to stay still">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" class="sv__ring-bg"/><circle cx="60" cy="60" r="54" class="sv__ring" data-ring/></svg>
+        <span class="sv__ic"><i></i><i></i></span>
+        <span class="sv__lab" data-hold-lab>hold</span>
+      </button>
+    </section>
+
+    <!-- ═══ 04 · your stays + book the next visit ═══ -->
+    <section class="bk2" id="book">
+      <div class="bk2__in">
+        <div class="bk2__left">
+          <b class="lbl">your stays · 你的停留</b>
+          <h2 class="bk2__title wide">Book the next<span class="script">visit</span></h2>
+          <p class="bk2__lead">pick a cat, a day and an hour. we’ll save a chair by the window. (it’s saved in this browser only, nothing is sent anywhere.)</p>
+          <p class="bk2__step"><span class="num">1</span> who</p>
+          <div class="bk2__cats" data-b-cats></div>
+          <p class="bk2__step"><span class="num">2</span> which day</p>
+          <div class="bk2__chips" data-b-days></div>
+          <p class="bk2__step"><span class="num">3</span> what time</p>
+          <div class="bk2__chips bk2__chips--t" data-b-times></div>
+          <button class="bk2__go" data-b-go data-magnetic=".25"><i></i><span>save my chair</span></button>
+        </div>
+        <div class="bk2__right">
+          <div class="vt" data-ticket>
+            <div class="vt__top"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b><span class="mono">visit card · 见面卡</span></div>
+            <div class="vt__pic" data-t-pic></div>
+            <p class="vt__cat wide" data-t-cat>miso</p>
+            <div class="vt__dots" data-t-dots><i></i><i></i><i></i></div>
+            <p class="vt__visit script" data-t-visit>visit two of three</p>
+            <dl class="vt__dl"><div><dt>day</dt><dd data-t-day>—</dd></div><div><dt>time</dt><dd data-t-time>—</dd></div><div><dt>chair</dt><dd>by the window</dd></div></dl>
+            <span class="vt__stamp" data-t-stamp>booked<small>已预约</small></span>
+          </div>
+          <div class="bk2__list" data-b-list></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 05 · questions ═══ -->
+    <section class="fq" id="questions">
+      <h2 class="fq__title wide">Small questions<span class="script">honest answers</span></h2>
+      <div class="fq__list">
+        <details><summary><span class="num">?</span>what if no cat chooses me?</summary><p>then nothing is wrong with you. some people take ten visits. some take one. the croissants are good either way, and the cats remember faces.</p></details>
+        <details><summary><span class="num">?</span>can i pick the cat up to see if we click?</summary><p>no. nobody picks up a cat here, not even the staff. you sit, they come. that’s the whole system.</p></details>
+        <details><summary><span class="num">?</span>do the three visits have to be in a row?</summary><p>no rush. a week, a month. the cat will still be the cat. we just ask you to come back to the same one.</p></details>
+        <details><summary><span class="num">?</span>what happens after the cat decides?</summary><p>a vet check, a small home visit from us, a bag of their food and their favourite bake for the first morning. then they go home, and we put their photo on the went home wall.</p></details>
+        <details><summary><span class="num">?</span>is it free?</summary><p>adoption is free. we ask for a donation to the shelter we work with, any amount, and that you keep buying croissants from time to time. they’ll want to know.</p></details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <p class="ft__call wide">come for a croissant.<span class="script">come back for them.</span></p>
+      <div><b>find us</b><span>lane 12, yongkang st.</span><span>da’an, taipei 106</span><span>open 7:00–19:00</span></div>
+      <div><b>the rules</b><span>no picking up cats.</span><span>no waking up cats.</span><span>the cat decides.</span></div>
+      <div><b>say hi</b><span>hello@pawse.tw</span><span>@pawse.taipei</span><span>press P to pause</span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b><span class="script">stay a little</span></div>
+    <div class="ft__bottom">
+      <span>© PAWSE 暂停 2026 · a concept bakery</span>
+      <span>no cats were woken up in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=9"></script>
+  <script src="js/stay.js?v=2"></script>
+</body>
+</html>
+<!--
+      ‖ ‖        /\_/\
+      ‖ ‖       ( -.- )   ...still deciding.
+      ‖ ‖        > ^ <
+               (")_(")
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   PAWSE 暂停 · stay with one. no rush. three visits. the cat decides.
+-->

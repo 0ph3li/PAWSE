@@ -1,0 +1,228 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   PAWSE 暂停 — about (why we pressed pause)
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>about — PAWSE 暂停</title>
+  <meta name="description" content="how a bakery on yongkang street became a waiting room for cats. the story, the name, the morning shift, and the way a cat goes from the shelter to your sofa.">
+  <meta name="author" content="ghostly.grl">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,0..100&family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Noto+Sans+SC:wght@400;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/about.css?v=3">
+</head>
+<body class="pg-about">
+
+  <!-- ═══ nav ═══ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b>
+      <span class="nav__cn">暂停</span>
+    </a>
+    <nav class="nav__links">
+      <a href="cats.html">cats</a>
+      <a href="bakes.html">bakes</a>
+      <a href="stay.html">stay</a>
+      <a href="went-home.html">went home</a>
+      <a href="about.html" aria-current="page">about</a>
+    </nav>
+    <button class="pbtn" data-pause data-magnetic=".3" aria-pressed="false" aria-label="pause the site"><span class="pbtn__ic"><i></i><i></i></span><span>pause</span></button>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ═══ 01 · head — the pause button opens into the bakery ═══ -->
+    <section class="ab" id="top">
+      <div class="ab__top">
+        <b class="lbl">about · 关于我们</b>
+        <span class="cn">一家按了暂停键的面包店</span>
+        <b class="lbl">yongkang st. · since 2023</b>
+      </div>
+      <h1 class="ab__title wide">
+        <span class="ab__l"><span>We pressed</span></span>
+        <span class="ab__l ab__l--2"><span class="ab__pill" aria-hidden="true"><i></i><i></i></span><span class="script">pause</span></span>
+      </h1>
+      <p class="ab__lead">a bakery in taipei where the cats on the chairs are waiting for a home, and nobody is in a hurry. not the bread, not you, and definitely not the cats.</p>
+    </section>
+
+    <section class="wn" aria-label="the door">
+      <div class="wn__stick">
+        <div class="wn__win" data-cursor="come in">
+          <div class="slot" data-img="ABOUT/door.jpg" data-desc="the bakery from the lane: the brick front, the wooden doors, the paw‖se sign"></div>
+        </div>
+        <span class="wn__bar wn__bar--l" aria-hidden="true"></span>
+        <span class="wn__bar wn__bar--r" aria-hidden="true"></span>
+        <p class="wn__cap"><span class="mono">lane 12, yongkang st.</span><span class="script">the door bubu sat in front of</span></p>
+      </div>
+    </section>
+
+    <!-- ═══ 02 · how it started ═══ -->
+    <section class="sy" id="story">
+      <div class="sy__head">
+        <h2 class="sy__title"><span class="cond">How it</span><span class="script">started</span></h2>
+        <p class="tiny sy__note">four moments, one cat, and a bakery that got too quiet.</p>
+      </div>
+      <div class="sy__grid">
+        <div class="sy__stack" aria-hidden="true">
+          <figure class="sy__pr" data-pr="0"><div class="slot" data-img="ABOUT/story-1.jpg" data-desc="a kitten under a clear umbrella on the wet street"></div><figcaption class="script">june 2023</figcaption></figure>
+          <figure class="sy__pr" data-pr="1"><div class="slot" data-img="ABOUT/story-2.jpg" data-desc="a kitten asleep on the floor next to a warm bakery oven"></div><figcaption class="script">july 2023</figcaption></figure>
+          <figure class="sy__pr" data-pr="2"><div class="slot" data-img="ABOUT/story-3.jpg" data-desc="a man at a café table with a coffee, a cat asleep on the chair next to him"></div><figcaption class="script">january 2024</figcaption></figure>
+          <figure class="sy__pr" data-pr="3"><div class="slot" data-img="ABOUT/story-4.jpg" data-desc="an empty chair in the bakery with one croissant on the table"></div><figcaption class="script">april 2024</figcaption></figure>
+        </div>
+        <ol class="sy__beats">
+          <li class="sy__b" data-b="0">
+            <span class="mono">06 · 2023</span>
+            <h3 class="wide">It rained for nine days.</h3>
+            <p>a kitten sat outside our door every morning, same spot. someone left a clear umbrella over her. we put out a saucer of milk (wrong), then real food (right).</p>
+          </li>
+          <li class="sy__b" data-b="1">
+            <span class="mono">07 · 2023</span>
+            <h3 class="wide">She came in. She didn’t leave.</h3>
+            <p>one morning the door was open for the flour delivery. she walked in, sat by the oven and fell asleep. we called her bubu. we didn’t decide that. she did.</p>
+          </li>
+          <li class="sy__b" data-b="2">
+            <span class="mono">01 · 2024</span>
+            <h3 class="wide">Someone stayed three hours.</h3>
+            <p>a regular watched her sleep through one coffee, then a second coffee, then lunch. he came back the next day. and the next. bubu started saving him the chair.</p>
+          </li>
+          <li class="sy__b" data-b="3">
+            <span class="mono">04 · 2024</span>
+            <h3 class="wide">She went home. We called the shelter.</h3>
+            <p>on 2 april bubu went home with him. by noon the bakery was too quiet. by friday we had a deal with the shelter on our street. by may, six cats on six chairs.</p>
+            <a class="sy__more" href="went-home.html" data-cursor="the wall">see everyone who went home <span>→</span></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══ 03 · the name ═══ -->
+    <section class="nmx" id="name">
+      <article class="dict">
+        <header class="dict__head">
+          <h2 class="dict__word"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b></h2>
+          <p class="dict__say mono">/pɔːz/ · 暂停 <em>zàn tíng</em></p>
+          <button class="dict__slow" data-slow data-magnetic=".25"><span class="pbtn__ic"><i></i><i></i></span><span>say it slow</span></button>
+        </header>
+        <ol class="dict__defs">
+          <li><i class="mono">verb</i><p>to stop for a moment, on purpose. the button on every remote. <span class="cn">暂停</span></p></li>
+          <li><i class="mono">noun</i><p>a <b>paw</b>, placed on your knee, that means “you are not leaving yet.”</p></li>
+          <li><i class="mono">noun</i><p>what a cat does in the middle of a room, for no reason, for about forty seconds.</p></li>
+          <li><i class="mono">place</i><p>a bakery on yongkang street. open 7:00 to 19:00. six chairs are taken.</p></li>
+        </ol>
+        <p class="dict__eg script">“we’ll pawse here for a croissant.” “we pawsed for three hours.”</p>
+      </article>
+    </section>
+
+    <!-- ═══ 04 · the morning shift ═══ -->
+    <section class="cr" id="crew">
+      <div class="cr__head">
+        <h2 class="cr__title wide">The morning<span class="script">shift</span></h2>
+        <p class="cr__now mono" data-now></p>
+      </div>
+      <div class="cr__grid" data-crew></div>
+    </section>
+
+    <!-- ═══ 05 · from the shelter to your sofa ═══ -->
+    <section class="pt" id="path">
+      <div class="pt__pin">
+        <div class="pt__head">
+          <b class="lbl">how a cat gets here · 流程</b>
+          <h2 class="pt__title wide">From the shelter<span class="script">to your sofa</span></h2>
+        </div>
+        <div class="pt__rail"><span class="pt__line"><i data-line></i></span><span class="pt__dot" data-dot><i></i><i></i></span></div>
+        <ol class="pt__track" data-track>
+          <li class="pt__s"><span class="num">1</span><b class="cond">The shelter</b><p>second home shelter, three streets away. a vet check, vaccines, a chip.</p><span class="pt__t mono">about a week</span></li>
+          <li class="pt__s"><span class="num">2</span><b class="cond">The quiet room</b><p>the back room. no guests, just the smell of bread through the wall. they come out when they want to.</p><span class="pt__t mono">about two weeks</span></li>
+          <li class="pt__s"><span class="num">3</span><b class="cond">The floor</b><p>the chairs, the window, the shelf above the oven. now they are waiting, and so are you.</p><span class="pt__t mono">as long as it takes</span></li>
+          <li class="pt__s"><span class="num">4</span><b class="cond">Three visits</b><p>at least three. we don’t count the coffee. the cat has to come to you, not the other way round.</p><a class="pt__go" href="stay.html">book a visit →</a></li>
+          <li class="pt__s"><span class="num">5</span><b class="cond">A home visit</b><p>xiao lin comes over with a cinnamon roll and checks the windows, the balcony, the hiding spots.</p><span class="pt__t mono">one afternoon</span></li>
+          <li class="pt__s pt__s--end"><span class="num">6</span><b class="cond">Went home</b><p>their chair stays empty for a day. their print goes on the wall by the door. we eat their favourite bake at seven.</p><a class="pt__go" href="went-home.html">the wall →</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══ 06 · what we don't do ═══ -->
+    <section class="mf" id="rules">
+      <b class="lbl mf__lbl">the house rules · 规矩</b>
+      <p class="mf__l wide">we don’t sell cats.</p>
+      <p class="mf__l wide">we don’t pick them up.</p>
+      <p class="mf__l wide">we don’t wake them.</p>
+      <p class="mf__l wide">nobody leaves with a cat on day one.</p>
+      <p class="mf__l wide">ten percent of every bake feeds the shelter.</p>
+      <p class="mf__l mf__l--end script">the cat decides.</p>
+    </section>
+
+    <!-- ═══ 07 · find us + one last pause ═══ -->
+    <section class="fd" id="visit">
+      <div class="fd__hang">
+        <span class="fd__hook" aria-hidden="true"></span>
+        <figure class="fd__pic" data-apron data-cursor="the apron"><div class="slot" data-img="ABOUT/street.jpg" data-desc="the apron on its hook by the back door"></div></figure>
+        <span class="fd__tag mono" data-tag>closed</span>
+      </div>
+      <div class="fd__txt">
+        <b class="lbl">find us · 地址</b>
+        <h2 class="fd__title wide">Come<span class="script">in</span></h2>
+        <p class="fd__open" data-open></p>
+        <p class="fd__p">the last one out hangs the apron on the hook by the back door. if you can see it through the window, we’re closed. if the hook is empty, someone is wearing it and the oven is on.</p>
+        <p class="fd__cn cn">围裙挂在钩子上，就是打烊了。</p>
+        <dl class="fd__dl">
+          <div><dt>where</dt><dd>lane 12, yongkang st.<br>da’an, taipei 106</dd></div>
+          <div><dt>mrt</dt><dd>dongmen, exit 5<br>three minutes on foot</dd></div>
+          <div><dt>open</dt><dd>every day 7:00–19:00<br>pawse hour 18:00–19:00</dd></div>
+          <div><dt>cats</dt><dd>awake around 10:00<br>asleep around 14:00</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="end" id="pause">
+      <p class="end__k tiny">one last thing</p>
+      <button class="end__btn" data-pause data-end aria-pressed="false" aria-label="pause the site"><i></i><i></i></button>
+      <h2 class="end__t wide" data-end-t>Now, <span class="script">pause.</span></h2>
+      <p class="end__s">press it, or press P anywhere on this site. everything stops for a moment. the cats won’t notice.</p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <p class="ft__call wide">come for a croissant.<span class="script">come back for them.</span></p>
+      <div><b>find us</b><span>lane 12, yongkang st.</span><span>da’an, taipei 106</span><span>open 7:00–19:00</span></div>
+      <div><b>the rules</b><span>no picking up cats.</span><span>no waking up cats.</span><span>the cat decides.</span></div>
+      <div><b>say hi</b><span>hello@pawse.tw</span><span>@pawse.taipei</span><span>press P to pause</span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b><span class="script">stay a little</span></div>
+    <div class="ft__bottom">
+      <span>© PAWSE 暂停 2026 · a concept bakery</span>
+      <span>no cats were woken up in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=9"></script>
+  <script src="js/about.js?v=2"></script>
+</body>
+</html>
+<!--
+      ‖ ‖        /\_/\
+      ‖ ‖       ( -.- )   pause.
+      ‖ ‖        > ^ <
+               (")_(")
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   PAWSE 暂停 · about. we pressed pause, then we never pressed play.
+-->

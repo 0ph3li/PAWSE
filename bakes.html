@@ -1,0 +1,234 @@
+<!doctype html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+   PAWSE 暂停 — the bakes
+   concept, design & code by ghostly.grl ♥
+  ═══════════════════════════════════════════════════════════════
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the bakes — PAWSE 暂停</title>
+  <meta name="description" content="what comes out of the oven at PAWSE, a bakery in taipei, from 7 to 19. every bake is somebody's favourite. build a stay set and see who sits with you.">
+  <meta name="author" content="ghostly.grl">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,0..100&family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Noto+Sans+SC:wght@400;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/bakes.css?v=5">
+</head>
+<body class="pg-bakes">
+
+  <!-- ═══ nav ═══ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b>
+      <span class="nav__cn">暂停</span>
+    </a>
+    <nav class="nav__links">
+      <a href="cats.html">cats</a>
+      <a href="bakes.html" aria-current="page">bakes</a>
+      <a href="stay.html">stay</a>
+      <a href="went-home.html">went home</a>
+      <a href="about.html">about</a>
+    </nav>
+    <button class="pbtn" data-pause data-magnetic=".3" aria-pressed="false" aria-label="pause the site"><span class="pbtn__ic"><i></i><i></i></span><span>pause</span></button>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ═══ 01 · head — out of the oven, live taipei time ═══ -->
+    <section class="bh" id="top">
+      <div class="bh__top">
+        <b class="lbl">the bakes · 面包</b>
+        <span class="cn">每天七点到十九点，一直在烤</span>
+        <b class="lbl">taipei <span data-clock>--:--</span></b>
+      </div>
+      <h1 class="bh__title wide"><span class="bh__l">Out of</span><span class="bh__l bh__l--2">the oven</span></h1>
+      <p class="bh__now" data-now><span class="script">checking the oven…</span></p>
+      <div class="bh__photo">
+        <div class="slot" data-img="BAKES/oven.jpg" data-desc="a real photo of the bakery counter or the oven, warm morning light, landscape" data-cursor="smells good"></div>
+        <div class="bh__bread slot slot--cut" data-img="HOME/hero-croissant.png" data-desc="croissants, cut out"></div>
+        <span class="bh__stamp" aria-hidden="true"><b>7–19</b><small>every day</small></span>
+      </div>
+    </section>
+
+    <!-- ═══ 02 · the oven clock — what comes out when ═══ -->
+    <section class="ov" id="oven">
+      <div class="ov__head">
+        <h2 class="ov__title"><span class="cond">The oven</span><span class="script">clock</span></h2>
+        <p class="tiny ov__note">every bake comes out at its own time. the needle is taipei, right now.<br>hover a bake to see who is waiting for it.</p>
+      </div>
+      <div class="ov__scroll">
+      <div class="ov__rail" data-rail>
+        <div class="ov__hours" data-hours></div>
+        <i class="ov__line"></i>
+        <i class="ov__fill" data-fill></i>
+        <span class="ov__needle" data-needle><b data-needle-t>--:--</b></span>
+        <div class="ov__pins" data-pins></div>
+      </div>
+      </div>
+      <p class="ov__swipe tiny">swipe the clock →</p>
+      <div class="ov__peek" data-peek>
+        <div class="ov__peek-img" data-peek-img></div>
+        <div class="ov__peek-txt">
+          <span class="ov__peek-t" data-peek-t>7:00</span>
+          <b class="ov__peek-n" data-peek-n>butter croissant</b>
+          <span class="script ov__peek-c" data-peek-c>miso is waiting for it</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 03 · special of the week — the paw bun ═══ -->
+    <section class="sp" id="special">
+      <div class="sp__top">
+        <b class="lbl">this week only · 本周限定</b>
+        <b class="lbl"><span data-left>40</span> of 40 left today</b>
+      </div>
+      <div class="sp__stage">
+        <h2 class="sp__word wide" aria-label="paw bun"><span>Paw</span><span>Bun</span></h2>
+        <div class="sp__bun slot slot--cut" data-img="BAKES/special-pawbun.png" data-desc="the paw bun: a soft milk bun shaped like a cat paw, four pink strawberry toe beans, cut out, glossy, seen from above" data-cursor="boop"></div>
+        <p class="sp__note sp__note--1"><span class="num">1</span><b>four toe beans</b><span class="tiny">strawberry cream, piped by hand</span></p>
+        <p class="sp__note sp__note--2"><span class="num">2</span><b>hokkaido milk bread</b><span class="tiny">proofed twice, slow, like everything here</span></p>
+        <p class="sp__note sp__note--3"><span class="num">3</span><b>a dusting of sugar</b><span class="tiny">the cats think it’s snow</span></p>
+        <span class="sp__price"><b>70</b><small>nt</small></span>
+        <p class="sp__cn cn">肉球面包</p>
+      </div>
+      <p class="sp__story"><span class="script">why a paw?</span> kumo kept stepping on the dough. we stopped fighting it. <span class="cn">云一直踩面团，我们就干脆做成了肉球。</span></p>
+    </section>
+
+    <!-- ═══ 04 · the menu board (tap a card to turn it) ═══ -->
+    <section class="mb" id="menu">
+      <div class="mb__head">
+        <b class="lbl">the counter · 柜台</b>
+        <h2 class="mb__title wide">Six bakes,<span class="script">six favourites</span></h2>
+        <p class="mb__hint tiny">tap a card to turn it over: what’s inside, and whether the cat can have some</p>
+      </div>
+      <div class="mb__grid" data-menu></div>
+    </section>
+
+    <!-- ═══ 05 · the last tray — pawse hour 18–19 ═══ -->
+    <section class="lt" id="last-tray">
+      <div class="lt__in">
+        <div class="lt__txt">
+          <b class="lbl">pawse hour · 18:00–19:00 · 猫醒时间</b>
+          <h2 class="lt__title wide">The last<span class="script">tray</span></h2>
+          <p class="lt__lead">at six the sun gets low, the cats wake up, and whatever is left on the counter is <b>half price</b>. nobody rushes you out. we just turn the lights down.</p>
+          <p class="lt__count" data-lt-count><span class="script">pawse hour starts in</span> <b>--:--</b></p>
+          <ul class="lt__list" data-lt-list></ul>
+        </div>
+        <div class="lt__pics">
+          <figure class="lt__pic lt__pic--1"><div class="slot" data-img="BAKES/sunset-1.jpg" data-desc="a real photo of the bakery at sunset, low orange light across the tables, a cat in it" data-cursor="18:00"></div><figcaption class="script">18:00, the lights go low</figcaption></figure>
+          <figure class="lt__pic lt__pic--2"><div class="slot" data-img="BAKES/sunset-2.jpg" data-desc="a real photo of the last tray: a few pastries left on a baking tray, golden light" data-cursor="half price"></div><figcaption class="script">the last one, half price</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 06 · the slow teas ═══ -->
+    <section class="tt" id="teas">
+      <div class="tt__card">
+        <h2 class="tt__title"><span class="cond">Slow teas</span><span class="script">to stay longer</span></h2>
+        <div class="tt__row" data-teas></div>
+        <p class="tt__foot tiny">refills are free if a cat is asleep on you. that’s the rule.</p>
+      </div>
+    </section>
+
+    <!-- ═══ 07 · the takeaway box ═══ -->
+    <section class="bx" id="box">
+      <div class="bx__head">
+        <b class="lbl">takeaway · 外带</b>
+        <h2 class="bx__title wide">Fill a box<span class="script">of six</span></h2>
+        <p class="bx__lead">drag a bake into the box, or just tap it. tap one in the box to take it back out.</p>
+      </div>
+      <div class="bx__wrap">
+        <div class="bx__shelf" data-shelf></div>
+        <div class="bx__boxzone">
+          <div class="bx__box" data-box>
+            <div class="bx__lid" data-lid><span class="bx__sticker"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b><small>box of six · 六个装</small></span></div>
+            <div class="bx__cells" data-cells></div>
+          </div>
+          <p class="bx__say" data-box-say><span class="script">an empty box. it’s a start.</span></p>
+          <div class="bx__acts"><span class="bx__tot" data-box-tot>0 / 6 · 0 nt</span><button class="bx__reset oval" data-box-reset>empty the box</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 08 · build a stay set → a receipt ═══ -->
+    <section class="ss" id="set">
+      <div class="ss__left">
+        <b class="lbl">stay set · 一份停留</b>
+        <h2 class="ss__title wide">Build a<span class="script">stay set</span></h2>
+        <p class="ss__lead">one bake, one slow tea, one chair by the window. we’ll tell you who will probably sit with you.</p>
+        <p class="ss__step"><span class="num">1</span> pick a bake</p>
+        <div class="ss__chips" data-pick-bake></div>
+        <p class="ss__step"><span class="num">2</span> pick a tea</p>
+        <div class="ss__chips ss__chips--tea" data-pick-tea></div>
+        <button class="ss__print" data-print data-magnetic=".25"><i></i><span>print my receipt</span></button>
+      </div>
+      <div class="ss__right">
+        <div class="ss__slotbar"><i></i></div>
+        <div class="rc" data-receipt>
+          <div class="rc__in">
+            <p class="rc__logo">PAWSE 暂停</p>
+            <p class="rc__addr">lane 12, yongkang st. · da’an, taipei</p>
+            <p class="rc__meta"><span>date</span><span data-rc-date>--</span></p>
+            <p class="rc__meta"><span>time</span><span data-rc-time>--</span></p>
+            <p class="rc__meta"><span>table</span><span>by the window</span></p>
+            <hr>
+            <div data-rc-items></div>
+            <hr>
+            <p class="rc__row rc__tot"><span>total</span><span data-rc-total>0 nt</span></p>
+            <p class="rc__row"><span>stay</span><span>as long as you like</span></p>
+            <hr>
+            <p class="rc__cat">sitting with you <span>(probably)</span></p>
+            <div class="rc__who">
+              <div class="rc__pic" data-rc-pic></div>
+              <b data-rc-cat>—</b>
+            </div>
+            <p class="rc__thanks">thank you. come back for them.</p>
+            <p class="rc__bars" aria-hidden="true" data-rc-bars></p>
+            <p class="rc__no" data-rc-no>no. 0000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <div class="ft__top">
+      <p class="ft__call wide">come for a croissant.<span class="script">come back for them.</span></p>
+      <div><b>find us</b><span>lane 12, yongkang st.</span><span>da’an, taipei 106</span><span>open 7:00–19:00</span></div>
+      <div><b>the rules</b><span>no picking up cats.</span><span>no waking up cats.</span><span>the cat decides.</span></div>
+      <div><b>say hi</b><span>hello@pawse.tw</span><span>@pawse.taipei</span><span>press P to pause</span></div>
+    </div>
+    <div class="ft__word" aria-hidden="true"><b class="logo"><span class="logo__w">paw</span><span class="logo__p"><i></i><i></i></span><span class="logo__w">se</span></b><span class="script">stay a little</span></div>
+    <div class="ft__bottom">
+      <span>© PAWSE 暂停 2026 · a concept bakery</span>
+      <span>no cats were woken up in the making of this site.</span>
+      <span class="ft-sign">concept, design &amp; code by ghostly.grl ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=9"></script>
+  <script src="js/bakes.js?v=2"></script>
+</body>
+</html>
+<!--
+      ‖ ‖        /\_/\
+      ‖ ‖       ( ^.^ )   is it warm yet?
+      ‖ ‖        > ^ <
+               (")_(")
+
+   ┌─┐┬ ┬┌─┐┌─┐┌┬┐┬ ┬ ┬  ┌─┐┬─┐┬
+   │ ┬├─┤│ │└─┐ │ │ └┬┘  │ ┬├┬┘│
+   └─┘┴ ┴└─┘└─┘ ┴ ┴─┘┴ o └─┘┴└─┴─┘ ♥
+
+   PAWSE 暂停 · the bakes. 7 to 19. somebody's favourite, every one.
+-->
